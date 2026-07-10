@@ -44,7 +44,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    padding: 60px 8%;
+    padding: 50px 8%;
     background: #f8f9fa;
 }
 
@@ -64,12 +64,18 @@ nav a:hover {
 }
 
 section {
-    padding: 60px 8%;
+    padding: 25px 8%;
+    scroll-margin-top: 120px;
 }
 
 section h2 {
     color: #c0392b;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+section p {
+    margin-top: 0;
 }
 
 table {
@@ -99,7 +105,7 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 h3 {
