@@ -43,6 +43,7 @@ nav a:hover {
 .hero {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
     padding: 30px 8%;
     background: #f8f9fa;
