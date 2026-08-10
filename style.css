@@ -1,499 +1,358 @@
 /* =========================================
-   BASE
-   ========================================= */
+BASE
+========================================= */
 
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-
     color: #333333;
-
     background: #ffffff;
 }
 
 
-
 /* =========================================
-   HEADER
-   ========================================= */
+HEADER
+========================================= */
 
 header {
-
     background: #c0392b;
-
     color: #ffffff;
-
     padding: 20px 6%;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     flex-wrap: wrap;
-
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
 }
 
-
 .logo-section h1 {
-
     margin: 0;
-
     font-size: 32px;
-
     line-height: 1.2;
 }
 
-
 .logo-section p {
-
     margin: 5px 0 0;
-
     font-size: 14px;
 }
 
 
-
 /* =========================================
-   NAVIGATION
-   ========================================= */
+NAVIGATION
+========================================= */
 
 nav {
-
     display: flex;
-
     align-items: center;
-
     flex-wrap: wrap;
 }
 
-
 nav a {
-
     color: #ffffff;
-
     text-decoration: none;
-
     margin-left: 22px;
-
     font-weight: 600;
-
     white-space: nowrap;
 }
 
-
 nav a:hover {
-
     text-decoration: underline;
 }
 
 
-
 /* =========================================
-   HOME SECTION
-   ========================================= */
+HOME SECTION
+========================================= */
 
 .home-section {
-
     background: #f8f9fa;
-
     padding: 30px 6% 35px;
 }
 
 
-
 /* =========================================
-   REGISTRATION CARD
-   ========================================= */
+REGISTRATION CARD
+========================================= */
 
 .info-card {
-
     width: 100%;
-
     box-sizing: border-box;
-
     background: #ffffff;
-
     padding: 22px 26px;
-
     border-radius: 10px;
-
     box-shadow:
         0 2px 10px rgba(0, 0, 0, 0.10);
-
     margin-bottom: 28px;
 }
 
-
 .info-card h3 {
-
     color: #c0392b;
-
     margin: 0 0 18px 0;
-
     font-size: 20px;
 }
 
 
-
 /* =========================================
-   REGISTRATION DETAILS GRID
-   ========================================= */
+REGISTRATION DETAILS GRID
+========================================= */
 
 .registration-grid {
-
     display: grid;
 
+    /* Five items across on desktop */
     grid-template-columns:
-        repeat(4, 1fr);
+        repeat(5, minmax(0, 1fr));
 
-    column-gap: 35px;
-
-    row-gap: 18px;
+    column-gap: 28px;
+    row-gap: 12px;
 }
 
-
 .registration-item {
-
     min-width: 0;
 }
 
-
 .registration-item strong {
-
     display: block;
-
     margin-bottom: 2px;
-
     font-weight: 700;
 }
 
-
 .registration-item span {
-
     display: block;
-
     overflow-wrap: anywhere;
 }
 
-
-
-/* Address occupies the full second row */
-
+/* Office address stays in the same row */
 .registration-item.address {
-
-    grid-column: 1 / -1;
-
-    padding-top: 2px;
+    grid-column: auto;
+    padding-top: 0;
 }
-
 
 
 /* =========================================
-   HOME DESCRIPTION
-   ========================================= */
+HOME DESCRIPTION
+========================================= */
 
 .home-content {
-
     max-width: 1000px;
 }
 
-
 .home-content h2 {
-
     color: #c0392b;
-
     margin: 0 0 10px 0;
-
     font-size: 25px;
 }
 
-
 .home-content p {
-
     margin: 0;
-
     max-width: 950px;
 }
 
 
-
 /* =========================================
-   GENERAL SECTIONS
-   ========================================= */
+GENERAL SECTIONS
+========================================= */
 
 section:not(.home-section) {
-
     padding: 18px 6%;
-
     scroll-margin-top: 110px;
 }
 
-
 section:not(.home-section) h2 {
-
     color: #c0392b;
-
     margin: 0 0 10px 0;
-
     font-size: 24px;
 }
 
-
 section:not(.home-section) p {
-
     margin: 0;
-
     max-width: 1000px;
 }
 
 
-
 /* =========================================
-   SUBHEADINGS
-   ========================================= */
+SUBHEADINGS
+========================================= */
 
 h3 {
-
     color: #c0392b;
-
     margin-top: 28px;
-
     margin-bottom: 8px;
-
     font-size: 19px;
 }
 
 
-
 /* =========================================
-   LINKS
-   ========================================= */
+LINKS
+========================================= */
 
 a {
-
     color: #c0392b;
 }
 
-
 a:hover {
-
     text-decoration: underline;
 }
 
 
-
 /* =========================================
-   DOWNLOADS
-   ========================================= */
+DOWNLOADS
+========================================= */
 
 .download-list {
-
     margin-top: 15px;
 }
 
-
 .download-list p {
-
     margin: 7px 0 !important;
 }
 
 
-
 /* =========================================
-   TABLES
-   ========================================= */
+TABLES
+========================================= */
 
 table {
-
     width: 100%;
-
     border-collapse: collapse;
-
     margin-top: 20px;
 }
 
-
 table th {
-
     background: #c0392b;
-
     color: #ffffff;
-
     padding: 12px;
-
     text-align: left;
 }
 
-
 table td {
-
     border: 1px solid #dddddd;
-
     padding: 12px;
 }
 
-
 table tr:nth-child(even) {
-
     background: #f7f7f7;
 }
 
 
-
 /* =========================================
-   FOOTER
-   ========================================= */
+FOOTER
+========================================= */
 
 footer {
-
     background: #222222;
-
     color: #ffffff;
-
     text-align: center;
-
     padding: 22px;
-
     margin-top: 20px;
 }
 
-
 footer p {
-
     margin: 0;
 }
 
 
-
 /* =========================================
-   TABLET
-   ========================================= */
+TABLET
+========================================= */
 
-@media (max-width: 900px) {
-
-
-    header {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-
-    nav {
-
-        margin-top: 15px;
-    }
-
-
-    nav a {
-
-        margin:
-            6px 18px 6px 0;
-    }
-
+@media (max-width: 1100px) {
 
     .registration-grid {
-
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(3, minmax(0, 1fr));
 
         gap: 18px 25px;
     }
 
-
     .registration-item.address {
-
         grid-column: 1 / -1;
     }
 
 }
 
 
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin:
+            6px 18px 6px 0;
+    }
+
+    .registration-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px 25px;
+    }
+
+    .registration-item.address {
+        grid-column: 1 / -1;
+    }
+
+}
+
 
 /* =========================================
-   MOBILE
-   ========================================= */
+MOBILE
+========================================= */
 
 @media (max-width: 600px) {
 
-
     header {
-
-        padding:
-            18px 6%;
+        padding: 18px 6%;
     }
 
-
     .logo-section h1 {
-
         font-size: 28px;
     }
 
-
     nav {
-
         display: block;
     }
 
-
     nav a {
-
         display: inline-block;
-
         margin:
             7px 14px 7px 0;
     }
 
-
     .home-section {
-
         padding:
             22px 6% 28px;
     }
 
-
     .info-card {
-
         padding:
             20px;
     }
 
-
     .registration-grid {
-
         grid-template-columns: 1fr;
-
         gap: 16px;
     }
 
-
     .registration-item.address {
-
         grid-column: auto;
     }
 
-
     section:not(.home-section) {
-
         padding:
             18px 6%;
     }
