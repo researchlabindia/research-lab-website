@@ -38,6 +38,10 @@ header {
     font-size: 14px;
 }
 
+nav {
+    white-space: nowrap;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -306,6 +310,7 @@ footer p {
 
     nav {
         margin-top: 15px;
+        white-space: normal;
     }
 
     nav a {
