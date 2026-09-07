@@ -78,7 +78,7 @@ nav a:hover {
 
 .registration-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 18px;
     align-items: start;
 }
@@ -323,8 +323,7 @@ footer p {
 @media (max-width: 600px) {
 
     .registration-grid {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 24px;
+        grid-template-columns: 1fr;
     }
 
     .home-section,
