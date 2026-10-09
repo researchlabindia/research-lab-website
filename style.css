@@ -84,7 +84,9 @@ nav a:hover {
     margin-bottom: 28px;
 }
 
-.info-card h3 {
+/* BP 1: Updated selector to match the H2 */
+
+.info-card h2 {
     color: #c0392b;
     margin: 0 0 18px;
     font-size: 20px;
