@@ -14,6 +14,7 @@ body {
 
 /* =========================================
    HEADER
+   RL_04: Sticky only on larger viewports
    ========================================= */
 
 header {
@@ -24,9 +25,18 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+    /* RL_04: Default to normal page positioning */
+    position: static;
+}
+
+/* Keep the header sticky on larger viewports */
+@media (min-width: 961px) and (min-height: 600px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
 }
 
 .logo-section h1 {
