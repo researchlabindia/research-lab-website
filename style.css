@@ -50,7 +50,7 @@ header {
 }
 
 nav {
-    white-space: nowrap;
+    white-space: normal;
 }
 
 nav a {
