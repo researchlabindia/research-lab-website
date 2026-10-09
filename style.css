@@ -81,35 +81,47 @@ nav a:hover {
     font-size: 20px;
 }
 
+
+/* RL_01: Registration details semantic definition list */
+
 .registration-grid {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 18px;
     align-items: start;
     margin: 0;
+    padding: 0;
 }
 
 .registration-item {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
     min-width: 0;
 }
 
 .registration-item dt {
+    display: block;
     color: #222;
     font-weight: bold;
-    margin-bottom: 3px;
+    margin: 0 0 3px;
+    padding: 0;
+    text-align: left;
 }
 
 .registration-item dd {
+    display: block;
     color: #333;
     margin: 0;
+    padding: 0;
+    text-align: left;
     overflow-wrap: anywhere;
 }
 
 .registration-item a {
     color: #333;
-    text-decoration: none;
+    text-decoration: underline;
     overflow-wrap: anywhere;
 }
 
