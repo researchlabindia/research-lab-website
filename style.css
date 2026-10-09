@@ -25,12 +25,11 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
-    /* RL_04: Default to normal page positioning */
     position: static;
 }
 
 /* Keep the header sticky on larger viewports */
+
 @media (min-width: 961px) and (min-height: 600px) {
     header {
         position: sticky;
@@ -128,6 +127,8 @@ nav a:hover {
     text-align: left;
     overflow-wrap: anywhere;
 }
+
+/* RL_03: Keep the email visibly underlined */
 
 .registration-item a {
     color: #333;
@@ -265,9 +266,8 @@ h3 {
 
 /* =========================================
    DOWNLOADS
+   RL_02: Semantic unordered list
    ========================================= */
-
-/* RL_02: Semantic unordered list */
 
 .download-list {
     margin: 0;
@@ -333,10 +333,12 @@ footer p {
 
 
 /* =========================================
-   MOBILE
+   MOBILE AND TABLET
+   RL_06: Switch registration grid to two
+   columns at 940px to prevent overlap
    ========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
 
     header {
         flex-direction: column;
@@ -359,6 +361,10 @@ footer p {
 
 }
 
+
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 600px) {
 
