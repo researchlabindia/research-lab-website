@@ -14,7 +14,6 @@ body {
 
 /* =========================================
    HEADER
-   RL_04: Sticky only on larger viewports
    ========================================= */
 
 header {
@@ -26,16 +25,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     position: static;
-}
-
-/* Keep the header sticky on larger viewports */
-
-@media (min-width: 961px) and (min-height: 600px) {
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
+    z-index: 1000;
 }
 
 .logo-section h1 {
@@ -59,7 +49,8 @@ nav a {
     font-weight: 600;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus-visible {
     text-decoration: underline;
 }
 
@@ -84,53 +75,34 @@ nav a:hover {
     margin-bottom: 28px;
 }
 
-/* BP 1: Updated selector to match the H2 */
-
 .info-card h2 {
     color: #c0392b;
     margin: 0 0 18px;
     font-size: 20px;
 }
 
-
-/* RL_01: Registration details definition list */
-
 .registration-grid {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 18px;
     align-items: start;
-    margin: 0;
-    padding: 0;
 }
 
 .registration-item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
     min-width: 0;
 }
 
-.registration-item dt {
-    display: block;
+.registration-item strong {
     color: #222;
-    font-weight: bold;
-    margin: 0 0 3px;
-    padding: 0;
-    text-align: left;
+    margin-bottom: 3px;
 }
 
-.registration-item dd {
-    display: block;
+.registration-item span {
     color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: left;
     overflow-wrap: anywhere;
 }
-
-/* RL_03: Keep the email visibly underlined */
 
 .registration-item a {
     color: #333;
@@ -138,11 +110,12 @@ nav a:hover {
     overflow-wrap: anywhere;
 }
 
-.registration-item a:hover {
+.registration-item a:hover,
+.registration-item a:focus-visible {
     text-decoration: underline;
 }
 
-.registration-item.address dd {
+.registration-item.address span {
     line-height: 1.45;
 }
 
@@ -156,7 +129,7 @@ nav a:hover {
 .home-content h2 {
     color: #c0392b;
     margin: 0 0 10px;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .home-content p {
@@ -170,14 +143,14 @@ nav a:hover {
 
 section {
     padding: 28px 6%;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 20px;
 }
 
 section h2 {
     color: #c0392b;
     margin-top: 0;
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 section p {
@@ -193,6 +166,7 @@ h3 {
     color: #c0392b;
     margin-top: 28px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 
@@ -259,9 +233,11 @@ h3 {
 
 .grievance-list a {
     color: #333;
+    text-decoration: underline;
 }
 
-.grievance-list a:hover {
+.grievance-list a:hover,
+.grievance-list a:focus-visible {
     text-decoration: underline;
 }
 
@@ -285,8 +261,9 @@ h3 {
     text-decoration: underline;
 }
 
-.download-list a:hover {
-    text-decoration: none;
+.download-list a:hover,
+.download-list a:focus-visible {
+    text-decoration: underline;
 }
 
 
@@ -335,13 +312,21 @@ footer p {
 
 
 /* =========================================
-   MOBILE AND TABLET
-   RL_06: Switch registration grid to two
-   columns at 940px to prevent overlap
+   RL_06: RESPONSIVE REGISTRATION GRID
    ========================================= */
 
 @media (max-width: 940px) {
+    .registration-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 
+
+/* =========================================
+   MOBILE AND TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -356,20 +341,27 @@ footer p {
         display: inline-block;
         margin: 8px 12px 8px 0;
     }
-
-    .registration-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
 }
 
 
 /* =========================================
-   MOBILE
+   RL_04 / RL_07: STICKY HEADER
+   Keep header static on small viewports.
+   ========================================= */
+
+@media (min-width: 961px) and (min-height: 600px) {
+    header {
+        position: sticky;
+        top: 0;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE SCREENS
    ========================================= */
 
 @media (max-width: 600px) {
-
     .registration-grid {
         grid-template-columns: 1fr;
     }
@@ -380,6 +372,10 @@ footer p {
         padding-right: 5%;
     }
 
+    .info-card {
+        padding: 18px;
+    }
+
     .logo-section h1 {
         font-size: 28px;
     }
@@ -388,5 +384,4 @@ footer p {
         margin-left: 10px;
         padding-left: 18px;
     }
-
 }
