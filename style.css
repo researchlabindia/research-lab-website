@@ -1,3 +1,4 @@
+
 /* =========================================
    GENERAL
    ========================================= */
@@ -82,9 +83,10 @@ nav a:hover {
 
 .registration-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 18px;
     align-items: start;
+    margin: 0;
 }
 
 .registration-item {
@@ -93,25 +95,29 @@ nav a:hover {
     min-width: 0;
 }
 
-.registration-item strong {
+.registration-item dt {
     color: #222;
+    font-weight: bold;
     margin-bottom: 3px;
 }
 
-.registration-item span {
+.registration-item dd {
     color: #333;
+    margin: 0;
+    overflow-wrap: anywhere;
 }
 
 .registration-item a {
     color: #333;
     text-decoration: none;
+    overflow-wrap: anywhere;
 }
 
 .registration-item a:hover {
     text-decoration: underline;
 }
 
-.registration-item.address span {
+.registration-item.address dd {
     line-height: 1.45;
 }
 
@@ -319,7 +325,7 @@ footer p {
     }
 
     .registration-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
 }
