@@ -380,17 +380,22 @@ footer p {
 }
 
 
-/* =========================================
+/* =====================================
    RL_04 / RL_07: STICKY HEADER
    Keep header static on small viewports
-========================================= */
+   ===================================== */
 
 @media (min-width: 961px) and (min-height: 600px) {
     header {
         position: sticky;
         top: 0;
     }
+
+    html {
+        scroll-padding-top: 140px;
+    }
 }
+
 
 
 /* =========================================
