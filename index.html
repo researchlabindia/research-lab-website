@@ -1,414 +1,445 @@
 
-/* =========================================
-   GENERAL
-   ========================================= */
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #ffffff;
-}
-
-
-/* =========================================
-   HEADER
-   ========================================= */
-
-header {
-    background: #c0392b;
-    color: white;
-    padding: 20px 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: static;
-    z-index: 1000;
-}
-
-.logo-section h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-.logo-section p {
-    margin: 5px 0 0;
-    font-size: 14px;
-}
-
-nav {
-    white-space: normal;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 600;
-}
-
-nav a:hover,
-nav a:focus-visible {
-    text-decoration: underline;
-}
-
-
-/* =========================================
-   HOME
-   ========================================= */
-
-.home-section {
-    padding: 28px 6% 32px;
-    background: #f8f9fa;
-}
-
-
-/* Registration card */
-
-.info-card {
-    background: white;
-    padding: 20px 24px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
-    margin-bottom: 28px;
-}
-
-.info-card h2 {
-    color: #c0392b;
-    margin: 0 0 18px;
-    font-size: 20px;
-}
-
-
-/* =========================================
-   REGISTRATION DETAILS
-   RL_01: Definition list styling
-   ========================================= */
-
-.registration-grid {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 18px;
-    align-items: start;
-    margin: 0;
-    padding: 0;
-}
-
-.registration-item {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-}
-
-/* Reset default browser margins on definition terms and values */
-
-.registration-item dt,
-.registration-item dd {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.registration-item dt {
-    color: #222;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 3px;
-    padding: 0;
-}
-
-.registration-item dd {
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    overflow-wrap: anywhere;
-}
-
-
-/* RL_03: Email link is always underlined */
+<!DOCTYPE html>
+<html lang="en">
 
-.registration-item a {
-    color: #333;
-    text-decoration: underline;
-    overflow-wrap: anywhere;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.registration-item a:hover,
-.registration-item a:focus-visible {
-    text-decoration: underline;
-}
+    <title>Research Lab | SEBI Registered Research Analyst</title>
 
-.registration-item.address dd {
-    line-height: 1.45;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-/* =========================================
-   HOME DESCRIPTION
-   ========================================= */
+<header>
 
-.home-content {
-    max-width: 1050px;
-}
+    <div class="logo-section">
+        <h1>Research Lab</h1>
+        <p>SEBI Registered Research Analyst</p>
+    </div>
 
-.home-content h2 {
-    color: #c0392b;
-    margin: 0 0 10px;
-    font-size: 20px;
-}
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#investor-charter">Investor Charter</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#disclosures">Disclosures</a>
+        <a href="#grievance">Grievance</a>
+        <a href="#complaints">Complaint Data</a>
+        <a href="#audit">Audit</a>
+        <a href="#upi">UPI</a>
+        <a href="#downloads">Downloads</a>
+    </nav>
 
-.home-content p {
-    margin: 0;
-}
+</header>
 
 
-/* =========================================
-   GENERAL SECTIONS
-   ========================================= */
+<!-- HOME -->
 
-section {
-    padding: 28px 6%;
-    scroll-margin-top: 20px;
-}
+<section id="home" class="home-section">
 
-section h2 {
-    color: #c0392b;
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-size: 20px;
-}
+    <div class="info-card">
 
-section p {
-    margin-top: 0;
-}
+        <!-- BP 1: Registration Details is now an H2 -->
+        <h2>Registration Details</h2>
 
+        <dl class="registration-grid">
 
-/* =========================================
-   GENERAL SUBHEADINGS
-   ========================================= */
+            <div class="registration-item">
+                <dt>Research Analyst</dt>
+                <dd>Poulomi Harolikar</dd>
+            </div>
 
-h3 {
-    color: #c0392b;
-    margin-top: 28px;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
+            <div class="registration-item">
+                <dt>Registration Number</dt>
+                <dd>INH000011307</dd>
+            </div>
 
+            <div class="registration-item">
+                <dt>Registration Validity</dt>
+                <dd>Perpetual</dd>
+            </div>
 
-/* =========================================
-   GRIEVANCE REDRESSAL
-   ========================================= */
+            <div class="registration-item">
+                <dt>Email</dt>
+                <dd>
+                    <a href="mailto:poulomi@research-lab.in">
+                        poulomi@research-lab.in
+                    </a>
+                </dd>
+            </div>
 
-.grievance-subheading {
-    color: #333;
-    font-size: 18px;
-    margin-top: 26px;
-    margin-bottom: 12px;
-}
+            <div class="registration-item">
+                <dt>Phone</dt>
+                <dd>+91 9845230782</dd>
+            </div>
 
+            <div class="registration-item address">
+                <dt>Office Address</dt>
+                <dd>
+                    J 405, Purva Highland, Holiday Village Road,
+                    Mallasandra, Bangalore
+                </dd>
+            </div>
 
-/* Main bullet list */
+        </dl>
 
-.grievance-list {
-    margin: 0 0 20px 22px;
-    padding-left: 20px;
-    color: #333;
-    font-size: 15px;
-    line-height: 1.55;
-}
+    </div>
 
 
-/* Space between the four main mechanisms */
+    <div class="home-content">
 
-.grievance-list > li {
-    margin-bottom: 22px;
-    padding-left: 5px;
-}
+        <h2>SEBI Registered Research Analyst</h2>
 
+        <p>
+            I am a SEBI Registered Research Analyst providing independent
+            equity research and investment analysis. The objective is to
+            assist investors in making informed investment decisions through
+            objective, research-driven insights and analysis of listed securities.
+        </p>
 
-/* Mechanism names */
+    </div>
 
-.grievance-list > li > strong {
-    color: #333;
-    font-size: 16px;
-}
+</section>
 
 
-/* Text inside each mechanism */
+<!-- INVESTOR CHARTER -->
 
-.grievance-list p {
-    margin: 7px 0;
-    font-size: 15px;
-}
+<section id="investor-charter">
 
+    <h2>Investor Charter</h2>
 
-/* Nested review bullets */
+    <p>
+        The Investor Charter provides investors with important information
+        about the services offered by Research Analysts, investor rights and
+        responsibilities, grievance redressal mechanisms and the applicable
+        timelines. It is intended to help investors understand the nature of
+        research services and the mechanisms available to them for raising
+        concerns or complaints.
+    </p>
 
-.grievance-list ul {
-    margin-top: 6px;
-    padding-left: 22px;
-}
+    <p>
+        The complete Investor Charter is available in the Downloads section
+        of this website.
+    </p>
 
-.grievance-list ul li {
-    margin-bottom: 4px;
-}
+</section>
 
 
-/* Grievance links */
+<!-- DISCLAIMER -->
 
-.grievance-list a {
-    color: #333;
-    text-decoration: underline;
-}
+<section id="disclaimer">
 
-.grievance-list a:hover,
-.grievance-list a:focus-visible {
-    text-decoration: underline;
-}
+    <h2>Disclaimer</h2>
 
+    <p>
+        Investment in securities market are subject to market risks.
+        Read all the related documents carefully before investing.
+    </p>
 
-/* =========================================
-   DOWNLOADS
-   RL_02: Semantic unordered list
-   ========================================= */
+    <p>
+        Registration granted by SEBI, enlistment with BSE and certification
+        from NISM in no way guarantees performance of the intermediary or
+        provides any assurance of returns to investors.
+    </p>
 
-.download-list {
-    margin: 0;
-    padding-left: 20px;
-}
+</section>
 
-.download-list li {
-    margin-bottom: 8px;
-}
 
-.download-list a {
-    color: #c0392b;
-    text-decoration: underline;
-}
+<!-- DISCLOSURES -->
 
-.download-list a:hover,
-.download-list a:focus-visible {
-    text-decoration: underline;
-}
+<section id="disclosures">
 
+    <h2>Disclosures</h2>
 
-/* =========================================
-   TABLES
-   ========================================= */
+    <p>
+        Research Lab maintains the disclosures required under the applicable
+        SEBI framework for Research Analysts, including disclosures relating
+        to conflicts of interest and other regulatory requirements. These
+        disclosures are intended to provide investors with transparency
+        regarding the nature of the research services and the Research
+        Analyst's regulatory obligations.
+    </p>
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
+    <p>
+        The complete Standard Disclosures document is available in the
+        Downloads section of this website.
+    </p>
 
-table th {
-    background: #c0392b;
-    color: white;
-    padding: 12px;
-    text-align: left;
-}
+</section>
 
-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-}
 
-table tr:nth-child(even) {
-    background: #f7f7f7;
-}
+<!-- GRIEVANCE REDRESSAL -->
 
+<section id="grievance">
 
-/* =========================================
-   FOOTER
-   ========================================= */
+    <h2>Grievance Redressal</h2>
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 20px;
-}
+    <p>
+        Investors can lodge complaints or grievances against the
+        Research Analyst directly with the Research Analyst. The
+        Research Analyst shall strive to redress the grievance
+        immediately, but not later than 21 days from receipt of the grievance.
+    </p>
 
-footer p {
-    margin: 0;
-}
+    <h3 class="grievance-subheading">Mode of Filing a Complaint</h3>
 
+    <ul class="grievance-list">
 
-/* =========================================
-   RL_06: RESPONSIVE REGISTRATION GRID
-   ========================================= */
+        <li>
+            <strong>SCORES 2.0</strong>
 
-@media (max-width: 940px) {
-    .registration-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
+            <p>
+                Investors may lodge complaints through SCORES 2.0,
+                a web-based centralized grievance redressal system
+                of SEBI for facilitating effective grievance redressal
+                in a time-bound manner.
+            </p>
 
+            <p>
+                <a href="https://scores.sebi.gov.in"
+                   target="_blank"
+                   rel="noopener">
+                    https://scores.sebi.gov.in
+                </a>
+            </p>
 
-/* =========================================
-   MOBILE AND TABLET
-   ========================================= */
+            <p>
+                Complaints or grievances against a Research Analyst
+                are subject to a two-level review mechanism:
+            </p>
 
-@media (max-width: 900px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+            <ul>
+                <li>
+                    <strong>First review:</strong> Designated RAASB
+                </li>
 
-    nav {
-        margin-top: 15px;
-        white-space: normal;
-    }
+                <li>
+                    <strong>Second review:</strong> SEBI
+                </li>
+            </ul>
 
-    nav a {
-        display: inline-block;
-        margin: 8px 12px 8px 0;
-    }
-}
+        </li>
 
 
-/* =========================================
-   RL_04 / RL_07: STICKY HEADER
-   Keep header static on small viewports.
-   ========================================= */
+        <li>
+            <strong>RAASB</strong>
 
-@media (min-width: 961px) and (min-height: 600px) {
-    header {
-        position: sticky;
-        top: 0;
-    }
-}
+            <p>
+                Investors may also lodge complaints through the
+                designated email ID of the RAASB.
+            </p>
+        </li>
 
 
-/* =========================================
-   SMALL MOBILE SCREENS
-   ========================================= */
+        <li>
+            <strong>SMARTODR</strong>
 
-@media (max-width: 600px) {
-    .registration-grid {
-        grid-template-columns: 1fr;
-    }
+            <p>
+                If an investor is not satisfied with the resolution
+                provided by the Market Participant, the investor has
+                the option to file the complaint or grievance on the
+                SMARTODR platform for its resolution through online
+                conciliation or arbitration.
+            </p>
+        </li>
 
-    .home-section,
-    section {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
 
-    .info-card {
-        padding: 18px;
-    }
+        <li>
+            <strong>Physical Complaints</strong>
 
-    .logo-section h1 {
-        font-size: 28px;
-    }
+            <p>
+                Investors may send physical complaints to:
+            </p>
 
-    .grievance-list {
-        margin-left: 10px;
-        padding-left: 18px;
-    }
-}
+            <p>
+                Office of Investor Assistance and Education,<br>
+                Securities and Exchange Board of India, SEBI Bhavan,<br>
+                Plot No. C4-A, ‘G’ Block, Bandra-Kurla Complex,<br>
+                Bandra (E), Mumbai - 400 051
+            </p>
+        </li>
+
+    </ul>
+
+    <p>
+        The detailed Grievance Redressal Mechanism is available in the
+        Downloads section of this website.
+    </p>
+
+</section>
+
+
+<!-- COMPLAINT DATA -->
+
+<section id="complaints">
+
+    <h2>Complaint Data</h2>
+
+    <p>
+        Complaint data is disclosed monthly in accordance with applicable
+        SEBI requirements. The latest complaint data, including monthly
+        and annual disposal trends, is maintained and made available
+        as part of the regulatory disclosures.
+    </p>
+
+</section>
+
+
+<!-- COMPLIANCE AUDIT -->
+
+<section id="audit">
+
+    <h2>Compliance Audit</h2>
+
+    <p>
+        Research Lab conducts an annual compliance audit in accordance
+        with the applicable SEBI (Research Analyst) Regulations and
+        related circulars and guidelines.
+    </p>
+
+    <p>
+        <strong>Compliance Audit Report – F.Y. 2025-26</strong>
+    </p>
+
+    <p>
+        <strong>Status:</strong> Completed
+    </p>
+
+    <p>
+        The Compliance Audit Report for F.Y. 2025-26 was completed on
+        10 September 2026.
+    </p>
+
+    <p>
+        The detailed Compliance Audit Report for F.Y. 2025-26 is
+        available in the Downloads section of this website.
+    </p>
+
+</section>
+
+
+<!-- UPI PAYMENT -->
+
+<section id="upi">
+
+    <h2>UPI Payment</h2>
+
+    <p>
+        Research Lab has obtained a SEBI-validated UPI ID handle for
+        secure payment collection, as mandated by SEBI.
+    </p>
+
+    <p>
+        For UPI payments, investors may use the following validated UPI ID:
+    </p>
+
+    <p>
+        <strong>poulomiharolikar.ra@validsbi</strong>
+    </p>
+
+    <p>
+        Investors may choose their preferred mode of payment, including
+        UPI, IMPS, NEFT, RTGS or cheque. If UPI is used for payment to
+        a registered intermediary, the payment should be made only using
+        the validated UPI ID allotted to the intermediary.
+    </p>
+
+    <p>
+        Investors may verify the UPI ID using SEBI's online verification
+        facility:
+    </p>
+
+    <p>
+        <a href="https://siportal.sebi.gov.in/intermediary/sebi-check"
+           target="_blank"
+           rel="noopener">
+            SEBI UPI Handle Verification Facility
+        </a>
+    </p>
+
+    <p>
+        The complete UPI communication, including FAQs and details on
+        verifying the validated UPI handle, is available in the
+        Downloads section of this website.
+    </p>
+
+</section>
+
+
+<!-- DOWNLOADS -->
+
+<section id="downloads">
+
+    <h2>Downloads</h2>
+
+    <p>
+        Relevant regulatory and compliance documents are available
+        for download below.
+    </p>
+
+    <!-- RL_02: Semantic unordered list -->
+    <ul class="download-list">
+
+        <li>
+            <a href="Investor_Charter.pdf" target="_blank">
+                Investor Charter
+            </a>
+        </li>
+
+        <li>
+            <a href="Standard_Disclosures.pdf" target="_blank">
+                Standard Disclosures
+            </a>
+        </li>
+
+        <li>
+            <a href="Internal_Policy.pdf" target="_blank">
+                Internal Policy and Control Procedures
+            </a>
+        </li>
+
+        <li>
+            <a href="Grievance_Redressal_Mechanism.pdf" target="_blank">
+                Grievance Redressal Mechanism
+            </a>
+        </li>
+
+        <li>
+            <a href="Complaints_Monthly.pdf" target="_blank">
+                Complaint Data – Sept 2026
+            </a>
+        </li>
+
+        <li>
+            <a href="Signed_Compliance Audit Report_2025-26.pdf" target="_blank">
+                Compliance Audit Report – F.Y. 2025-26
+            </a>
+        </li>
+
+        <li>
+            <a href="UPI - Intimation to Investors.pdf" target="_blank">
+                UPI – Intimation to Investors
+            </a>
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Research Lab. All rights reserved.
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
